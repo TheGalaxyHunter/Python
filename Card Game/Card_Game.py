@@ -1,3 +1,6 @@
+import time
+
+
 class Card:
     suitList = ["Clubs", "Diamonds", "Hearts", "Spades"]
     rankList = ["none", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
@@ -107,6 +110,8 @@ class CardGame:
     def __init__(self):
         self.deck = Deck()
         self.deck.shuffle()
+        self.deck.shuffle()
+        self.deck.shuffle()
 
 
 class OldMaidHand(Hand):
@@ -135,6 +140,7 @@ class OldMaidGame(CardGame):
         self.hands = []
 
     def play(self, names):
+        time.sleep(1)
         # remove Queen of Clubs
         self.deck.removeCard(Card(0, 12))
 
@@ -146,11 +152,13 @@ class OldMaidGame(CardGame):
         self.deck.deal(self.hands)
         print("\n---------- Cards have been dealt")
         self.printHands()
+        time.sleep(1)
 
         # remove initial matches
         matches = self.removeAllMatches()
         print("---------- Matches discarded, play begins\n")
         self.printHands()
+        time.sleep(1)
 
         # play until all 50 cards are matched
         turn = 0
@@ -158,9 +166,11 @@ class OldMaidGame(CardGame):
         while matches < 25:
             matches = matches + self.playOneTurn(turn)
             turn = (turn + 1) % numHands
+            time.sleep(0.5)
 
         print("---------- Game is Over\n\n")
         self.printHands()
+        time.sleep(1)
 
         # print the loser's name
         for hand in self.hands:
@@ -175,6 +185,7 @@ class OldMaidGame(CardGame):
 
     def printHands(self):
         for hand in self.hands:
+            time.sleep(1)
             print(hand)
 
     def playOneTurn(self, i):
@@ -197,4 +208,6 @@ class OldMaidGame(CardGame):
 
 
 game = OldMaidGame()
-game.play(["AD", "Anita Das", "DR Das"])
+names_of_players = input("Enter the names of the players (comma in between them): ").split(", ")
+print("\nLet's begin the game of cards......!!!!!\n")
+game.play(names_of_players)

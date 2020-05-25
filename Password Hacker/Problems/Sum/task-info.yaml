@@ -1,0 +1,9 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: '# read sums.txt'
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8145
+status: Solved
+record: -1

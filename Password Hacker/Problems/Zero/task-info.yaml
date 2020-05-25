@@ -1,0 +1,13 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    n = int(input())
+    denominator = int(input())
+
+    print(n // denominator)
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7187
+status: Solved
+record: -1

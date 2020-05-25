@@ -1,0 +1,12 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # put your python code here
+    def multiply():
+        ...
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7252
+status: Solved
+record: -1

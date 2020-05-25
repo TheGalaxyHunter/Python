@@ -1,0 +1,9 @@
+type: code
+custom_name: How long is that word?
+files:
+- name: task.py
+  visible: true
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6896
+status: Solved
+record: -1

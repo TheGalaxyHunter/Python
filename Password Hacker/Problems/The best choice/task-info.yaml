@@ -1,0 +1,16 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    print("What would I watch tonight?")
+
+    # declare the variable before using it
+    ...
+
+    # any answer will do, since heart knows no law
+    my_answer = fave_tv_show
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7185
+status: Solved
+record: -1

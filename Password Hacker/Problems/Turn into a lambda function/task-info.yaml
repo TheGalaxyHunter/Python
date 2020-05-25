@@ -1,0 +1,11 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # Don't forget to make use of lambda functions in your solution
+    func = lambda ...
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7099
+status: Solved
+record: -1

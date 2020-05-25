@@ -1,0 +1,12 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    def find_positive(my_list):
+        # complete the next line
+        return list(...)
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8129
+status: Solved
+record: -1

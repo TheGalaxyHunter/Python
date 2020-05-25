@@ -1,0 +1,11 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    file = open('test_file.txt', 'r')
+    print('Opened test_file!')
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8697
+status: Solved
+record: -1

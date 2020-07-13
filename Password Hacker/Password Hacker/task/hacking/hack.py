@@ -7,9 +7,6 @@ from datetime import datetime, timedelta
 
 
 def passwords():
-    # with open('D:/Password Hacker/passwords.txt', 'r') as file:
-    #     for line in file:
-    #         yield line.rstrip('\n')
     lst = list(string.ascii_letters)
     lst.extend(list(string.digits))
     for i in lst:
